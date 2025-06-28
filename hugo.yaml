@@ -1,0 +1,136 @@
+baseURL: "https://blog-f04.pages.dev"
+title: "deepsec"
+
+defaultContentLanguage: en
+enableRobotsTXT: true
+enableGitInfo: true
+hasCJKLanguage: false
+
+theme: hextra
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+languages:
+  en:
+    languageName: English
+    languageCode: en
+    weight: 1
+    title: deepsec
+    params:
+      description: "Modern, responsive, batteries-included Hugo theme for creating beautiful static websites."
+    menus:
+      main:
+        - identifier: home
+          name: Home
+          pageRef: /
+          weight: 1
+        - identifier: about
+          name: About
+          pageRef: /about
+          weight: 2
+  tr:
+    languageName: Türkçe
+    languageCode: tr
+    weight: 2
+    title: deepsec
+    params:
+      description: "Modern, duyarlı, eksiksiz özellikli Hugo teması."
+    menus:
+      main:
+        - identifier: home
+          name: Ana Sayfa
+          pageRef: /
+          weight: 1
+        - identifier: about
+          name: Hakkında
+          pageRef: /about
+          weight: 2
+  de:
+    languageName: Deutsch
+    languageCode: de
+    weight: 3
+    title: deepsec
+    params:
+      description: "Modernes, responsives, funktionsreiches Hugo-Theme."
+    menus:
+      main:
+        - identifier: home
+          name: Startseite
+          pageRef: /
+          weight: 1
+        - identifier: about
+          name: Über
+          pageRef: /about
+          weight: 2
+
+permalinks:
+  page:
+    en: "/:slug/"
+    tr: "/:slug/"
+    de: "/:slug/"
+  section:
+    en: "/:slug/"
+    tr: "/:slug/"
+    de: "/:slug/"
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [["\\[", "\\]"], ["$$", "$$"]]
+          inline: [["\\(", "\\)"]]
+        enable: true
+
+enableInlineShortcodes: true
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+    width: wide
+  page:
+    width: normal
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+  editURL:
+    enable: false
+  blog:
+    list:
+      displayTags: true
+      sortBy: date
+      sortOrder: desc
+    article:
+      displayPagination: true
+  toc:
+    displayTags: true
+  highlight:
+    copy:
+      enable: true
+      display: hover
+  comments:
+    enable: false
