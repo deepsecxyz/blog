@@ -2,7 +2,8 @@ baseURL: "https://blog-f04.pages.dev"
 title: "deepsec"
 
 defaultContentLanguage: en
-enableRobotsTXT: true
+
+enableRobotsTXT: false
 enableGitInfo: true
 hasCJKLanguage: false
 
@@ -13,6 +14,11 @@ outputs:
   page: [HTML]
   section: [HTML, RSS]
 
+# Configure sections to use specific layouts
+sections:
+  blog:
+    layout: docs
+
 languages:
   en:
     languageName: English
@@ -20,61 +26,147 @@ languages:
     weight: 1
     title: deepsec
     params:
-      description: "Modern, responsive, batteries-included Hugo theme for creating beautiful static websites."
+      description: "Cloud security and DDoS protection consultancy services."
     menus:
       main:
         - identifier: home
           name: Home
           pageRef: /
           weight: 1
+    
+        - identifier: solutions
+          name: Solutions
+          pageRef: /solutions
+          weight: 3
+        - identifier: blog
+          name: Blog
+          pageRef: /blog
+          weight: 4
         - identifier: about
           name: About
           pageRef: /about
+          weight: 5
+        - name: Search
+          weight: 6
+          params:
+            type: search
+        - name: GitHub
+          weight: 7
+          url: "https://github.com/deepsecxyz"
+          params:
+            icon: github
+      
+      blog:
+        - identifier: cloud-security
+          name: "Cloud Security"
+          pageRef: "/blog/cloud-security"
+          weight: 1
+        - identifier: ddos-protection
+          name: "DDoS Protection"
+          pageRef: "/blog/ddos-protection"
           weight: 2
+        - identifier: asset-security
+          name: "Asset Security"
+          pageRef: "/blog/asset-security"
+          weight: 3
   tr:
     languageName: Türkçe
     languageCode: tr
     weight: 2
     title: deepsec
     params:
-      description: "Modern, duyarlı, eksiksiz özellikli Hugo teması."
+      description: "Bulut güvenliği ve DDoS koruma danışmanlık hizmetleri."
     menus:
       main:
         - identifier: home
           name: Ana Sayfa
-          pageRef: /
+          pageRef: /tr/
           weight: 1
+  
+        - identifier: solutions
+          name: Çözümler
+          pageRef: /tr/cozumler
+          weight: 3
+        - identifier: blog
+          name: Blog
+          pageRef: /blog
+          weight: 4
         - identifier: about
           name: Hakkında
-          pageRef: /about
+          pageRef: /tr/hakkinda
+          weight: 5
+        - name: Search
+          weight: 6
+          params:
+            type: search
+        - name: GitHub
+          weight: 7
+          url: "https://github.com/deepsecxyz"
+          params:
+            icon: github
+      blog:
+        - identifier: cloud-security
+          name: "Bulut Güvenliği"
+          pageRef: "/blog/cloud-security"
+          weight: 1 
+        - identifier: ddos-protection
+          name: "DDoS Koruma"
+          pageRef: "/blog/ddos-protection"
           weight: 2
+        - identifier: asset-security
+          name: "Varlık Güvenliği"
+          pageRef: "/blog/asset-security"
+          weight: 3
+
   de:
     languageName: Deutsch
     languageCode: de
     weight: 3
     title: deepsec
     params:
-      description: "Modernes, responsives, funktionsreiches Hugo-Theme."
+      description: "Cloud-Sicherheit und DDoS-Schutz Beratungsdienstleistungen."
     menus:
       main:
         - identifier: home
           name: Startseite
-          pageRef: /
+          pageRef: /de/
           weight: 1
+    
+        - identifier: solutions
+          name: Lösungen
+          pageRef: /de/losungen
+          weight: 3
+        - identifier: blog
+          name: Blog
+          pageRef: /blog
+          weight: 4
         - identifier: about
-          name: Über
-          pageRef: /about
-          weight: 2
+          name: Über uns
+          pageRef: /de/uber-uns
+          weight: 5
+        - name: Search
+          weight: 6
+          params:
+            type: search
+        - name: GitHub
+          weight: 7
+          url: "https://github.com/deepsecxyz"
+          params:
+            icon: github
 
-permalinks:
-  page:
-    en: "/:slug/"
-    tr: "/:slug/"
-    de: "/:slug/"
-  section:
-    en: "/:slug/"
-    tr: "/:slug/"
-    de: "/:slug/"
+      blog:
+        - identifier: cloud-security
+          name: "Cloud Security"
+          pageRef: "/blog/cloud-security"
+          weight: 1
+        - identifier: ddos-protection
+          name: "DDoS Protection"
+          pageRef: "/blog/ddos-protection"
+          weight: 2
+        - identifier: asset-security
+          name: "Asset Security"
+          pageRef: "/blog/asset-security"
+          weight: 3
 
 markup:
   highlight:
@@ -95,9 +187,14 @@ params:
   navbar:
     displayTitle: true
     displayLogo: true
+
+
     logo:
       path: images/logo.svg
       dark: images/logo-dark.svg
+      link: /
+      width: 40
+      height: 20
     width: wide
   page:
     width: normal
@@ -107,8 +204,8 @@ params:
   footer:
     enable: true
     displayCopyright: true
-    displayPoweredBy: true
-    width: normal
+    displayPoweredBy: false
+    width: full
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
   search:
@@ -120,12 +217,17 @@ params:
   editURL:
     enable: false
   blog:
+    
+    sidebar:
+      display: true
     list:
       displayTags: true
       sortBy: date
       sortOrder: desc
     article:
       displayPagination: true
+    layout: docs
+    type: docs
   toc:
     displayTags: true
   highlight:

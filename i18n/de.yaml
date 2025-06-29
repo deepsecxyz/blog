@@ -1,0 +1,79 @@
+nav:
+  documentation: "Blog"
+  blog: "Blog"
+  categories: "Kategorien"
+  about: "Über uns"
+  search: "Suchen"
+
+# URL translations for blog sections
+urls:
+  cloud-security: "cloud-sicherheit"
+  ddos-protection: "ddos-schutz"
+  asset-security: "asset-sicherheit"
+
+blog:
+  cloud_security: "Cloud-Sicherheit"
+  cloudflare: "Cloudflare"
+  ddos_protection: "DDoS-Schutz"
+  cloud_security_basics: "Cloud-Sicherheitsgrundlagen"
+  cloudflare_best_practices: "Cloudflare Best Practices"
+  ddos_protection_cloudflare: "DDoS-Schutz mit Cloudflare"
+
+category:
+  cloud_security: "Cloud-Sicherheit"
+  cloudflare: "Cloudflare"
+  ddos_protection: "DDoS-Schutz"
+  cloud_security:
+    description: "Cloud-Sicherheitsgrundlagen und Best Practices"
+  cloudflare:
+    description: "Cloudflare-Konfigurations- und Optimierungsanleitungen"
+  ddos_protection:
+    description: "DDoS-Angriffspräventionsstrategien"
+
+page:
+  blog:
+    title: "DeepSec Blog"
+    description: "Umfassende Anleitungen und Tutorials für Cloud-Sicherheit und DDoS-Schutz"
+
+common:
+  getting_started: "Erste Schritte"
+  next_steps: "Nächste Schritte"
+  learn_more: "Mehr erfahren"
+  read_more: "Weiterlesen"
+  language: "Sprache"
+
+error:
+  page_not_found: "Seite nicht gefunden"
+  page_not_found:
+    description: "Die gesuchte Seite konnte nicht gefunden werden."
+
+search:
+  placeholder: "Blog durchsuchen..."
+  no_results: "Keine Ergebnisse gefunden"
+  results_for: "Ergebnisse für"
+
+# Hextra theme translations
+backToTop: "Nach oben"
+changeLanguage: "Sprache ändern"
+changeTheme: "Theme ändern"
+copyCode: "Code kopieren"
+copyright: "© 2025 deepsec. Alle Rechte vorbehalten."
+dark: "Dunkel"
+editThisPage: "Diese Seite auf GitHub bearbeiten →"
+lastUpdated: "Zuletzt aktualisiert"
+light: "Hell"
+noResultsFound: "Keine Ergebnisse gefunden."
+onThisPage: "Auf dieser Seite"
+tags: "Tags"
+poweredBy: "Unterstützt von Hextra"
+readMore: "Weiterlesen →"
+searchPlaceholder: "Suchen..."
+
+menu:
+  blog: "Blog"
+  about: "Über uns"
+  cloudflare: "Cloudflare"
+
+tableOfContents: "Inhaltsverzeichnis"
+close: "Schließen"
+open: "Öffnen" 

@@ -1,0 +1,140 @@
+# DeepSec Blog Structure Rules
+
+## Directory Structure
+```
+content/
+├── blog/
+│   ├── _index.md (main blog page)
+│   ├── _index.de.md (German blog page)
+│   ├── _index.tr.md (Turkish blog page)
+│   ├── cloud-security/
+│   │   ├── _index.md (cloud security section)
+│   │   ├── _index.de.md (German cloud security)
+│   │   ├── _index.tr.md (Turkish cloud security)
+│   │   ├── aws-basics.md (English post)
+│   │   ├── aws-basics.de.md (German post)
+│   │   ├── aws-basics.tr.md (Turkish post)
+│   │   ├── azure-basics.md (English post)
+│   │   ├── azure-basics.de.md (German post)
+│   │   └── azure-basics.tr.md (Turkish post)
+│   ├── ddos-protection/
+│   │   ├── _index.md (ddos section)
+│   │   ├── _index.de.md (German ddos)
+│   │   ├── _index.tr.md (Turkish ddos)
+│   │   └── [posts with .md, .de.md, .tr.md extensions]
+│   └── asset-security/
+│       ├── _index.md (asset security section)
+│       ├── _index.de.md (German asset security)
+│       ├── _index.tr.md (Turkish asset security)
+│       └── [posts with .md, .de.md, .tr.md extensions]
+```
+
+## File Naming Conventions
+- **English posts**: `filename.md`
+- **German posts**: `filename.de.md`
+- **Turkish posts**: `filename.tr.md`
+- **Section indexes**: `_index.md`, `_index.de.md`, `_index.tr.md`
+
+## Front Matter Structure
+
+### Section Index Files (_index.md)
+```yaml
+---
+title: "Section Name"
+linkTitle: "Section Name"
+slug: "section-name"
+description: "Description of the section"
+translationKey: "section-name"
+layout: docs
+type: docs
+aliases: ["/blog/section-name"]
+---
+```
+
+### Section Index Files (_index.tr.md) translate needs url for translation with slug
+```yaml
+---
+title: "Section Name"
+linkTitle: "Section Name"
+slug: "section-name"
+description: "Description of the section"
+translationKey: "section-name"
+layout: docs
+type: docs
+url: "/tr/blog/section-name" 
+---
+```
+
+### Blog Posts
+```yaml
+---
+title: "Post Title"
+linkTitle: "Post Title"
+slug: "post-slug"
+description: "Post description"
+translationKey: "post-slug"
+weight: 1
+layout: docs
+type: docs
+aliases: ["/blog/section-name/post-slug"]
+---
+```
+
+### Blog Posts with url for translation with slug for Turkish /tr/ for German /de/
+```yaml
+---
+title: "Post Title"
+linkTitle: "Post Title"
+slug: "post-slug"
+description: "Post description"
+translationKey: "post-slug"
+weight: 1
+layout: docs
+type: docs
+url: "/tr/blog/section-name/post-slug"
+---
+```
+
+## Content Guidelines
+
+#icons
+use only icons from https://v1.heroicons.com/
+
+### Section Index Pages
+- Use `{{< cards >}}` to display subsections
+- Each card should link to a subsection
+- Include relevant icons for each section
+- Keep descriptions concise
+
+### Blog Posts
+- Start with a brief introduction
+- Use clear headings (##, ###)
+- Include practical examples and code snippets
+- End with a summary or next steps
+- Keep content focused and actionable
+
+## Language Support
+- Always create 3 versions: English (.md), German (.de.md), Turkish (.tr.md)
+- Use same `translationKey` across all language versions
+- Maintain consistent structure across languages
+- Translate content appropriately for each language
+
+## Icons to Use
+- `cloud` - for cloud-related content
+- `exclamation` - for security warnings/alerts
+- `eye` - for monitoring/visibility
+- `search` - for analysis/investigation
+- `cog` - for configuration/setup
+- `users` - for team/people
+- `star` - for best practices/recommendations
+- `clock` - for time-related content
+- `book` - for educational content
+- `mail` - for contact/communication
+
+## When Creating New Content
+1. Determine the appropriate section (cloud-security, ddos-protection, asset-security)
+2. Create the English version first (.md)
+3. Create German (.de.md) and Turkish (.tr.md) versions
+4. Update section index files to include new content
+5. Use consistent front matter structure
+6. Include relevant icons and proper linking 

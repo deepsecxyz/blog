@@ -1,0 +1,89 @@
+nav:
+  documentation: "Blog"
+  blog: "Blog"
+  categories: "Categories"
+  about: "About"
+  search: "Search"
+
+# URL translations for blog sections
+urls:
+  cloud-security: "cloud-security"
+  ddos-protection: "ddos-protection"
+  asset-security: "asset-security"
+
+blog:
+  cloud_security: "Cloud Security"
+  cloudflare: "Cloudflare"
+  ddos_protection: "DDoS Protection"
+  cloud_security_basics: "Cloud Security Basics"
+  cloudflare_best_practices: "Cloudflare Best Practices"
+  ddos_protection_cloudflare: "DDoS Protection with Cloudflare"
+
+category:
+  cloud_security: "Cloud Security"
+  cloudflare: "Cloudflare"
+  ddos_protection: "DDoS Protection"
+  cloud_security:
+    description: "Cloud security fundamentals and best practices"
+  cloudflare:
+    description: "Cloudflare configuration and optimization guides"
+  ddos_protection:
+    description: "DDoS attack prevention strategies"
+
+page:
+  blog:
+    title: "DeepSec Blog"
+    description: "Comprehensive guides and tutorials for cloud security and DDoS protection"
+
+common:
+  getting_started: "Getting Started"
+  next_steps: "Next Steps"
+  learn_more: "Learn More"
+  read_more: "Read More"
+  language: "Language"
+
+error:
+  page_not_found: "Page Not Found"
+  page_not_found:
+    description: "The page you are looking for could not be found."
+
+search:
+  placeholder: "Search blog..."
+  no_results: "No results found"
+  results_for: "Results for"
+
+# Hextra theme translations
+backToTop: "Back to top"
+changeLanguage: "Change language"
+changeTheme: "Change theme"
+copyCode: "Copy code"
+copyright: "© 2025 deepsec. All rights reserved."
+dark: "Dark"
+editThisPage: "Edit this page on GitHub →"
+lastUpdated: "Last updated"
+light: "Light"
+noResultsFound: "No results found."
+onThisPage: "On this page"
+tags: "Tags"
+poweredBy: "Powered by Hextra"
+readMore: "Read more →"
+searchPlaceholder: "Search..."
+
+menu:
+  blog: "Blog"
+  about: "About"
+  cloudflare: "Cloudflare"
+
+search:
+  no_results: "No results found."
+  results: "results found"
+readMore: "Read more →"
+lastUpdated: "Last updated"
+tags: "Tags"
+categories: "Categories"
+relatedPosts: "Related Posts"
+tableOfContents: "Table of Contents"
+backToTop: "Back to top"
+menu: "Menu"
+close: "Close"
+open: "Open" 

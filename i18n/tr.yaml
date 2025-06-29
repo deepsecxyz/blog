@@ -1,0 +1,80 @@
+nav:
+  documentation: "Blog"
+  blog: "Blog"
+  categories: "Kategoriler"
+  about: "Hakkımızda"
+  search: "Ara"
+
+# URL translations for blog sections
+urls:
+  cloud-security: "bulut-guvenligi"
+  ddos-protection: "ddos-koruma"
+  asset-security: "varlik-guvenligi"
+
+
+blog:
+  cloud_security: "Bulut Güvenliği"
+  cloudflare: "Cloudflare"
+  ddos_protection: "DDoS Koruması"
+  cloud_security_basics: "Bulut Güvenliği Temelleri"
+  cloudflare_best_practices: "Cloudflare En İyi Uygulamalar"
+  ddos_protection_cloudflare: "Cloudflare ile DDoS Koruması"
+
+category:
+  cloud_security: "Bulut Güvenliği"
+  cloudflare: "Cloudflare"
+  ddos_protection: "DDoS Koruması"
+  cloud_security:
+    description: "Bulut güvenliği temelleri ve en iyi uygulamalar"
+  cloudflare:
+    description: "Cloudflare yapılandırma ve optimizasyon rehberleri"
+  ddos_protection:
+    description: "DDoS saldırı önleme stratejileri"
+
+page:
+  blog:
+    title: "DeepSec Blog"
+    description: "Bulut güvenliği ve DDoS koruması için kapsamlı rehberler ve öğreticiler"
+
+common:
+  getting_started: "Başlarken"
+  next_steps: "Sonraki Adımlar"
+  learn_more: "Daha Fazla Bilgi"
+  read_more: "Devamını Oku"
+  language: "Dil"
+
+error:
+  page_not_found: "Sayfa Bulunamadı"
+  page_not_found:
+    description: "Aradığınız sayfa bulunamadı."
+
+search:
+  placeholder: "Blogda ara..."
+  no_results: "Sonuç bulunamadı"
+  results_for: "Sonuçlar"
+
+# Hextra theme translations
+backToTop: "Yukarı çık"
+changeLanguage: "Dili değiştir"
+changeTheme: "Temayı değiştir"
+copyCode: "Kodu kopyala"
+copyright: "© 2025 deepsec. Tüm hakları saklıdır."
+dark: "Koyu"
+editThisPage: "Bu sayfayı GitHub'da düzenle →"
+lastUpdated: "Son güncelleme"
+light: "Açık"
+noResultsFound: "Sonuç bulunamadı."
+onThisPage: "Bu sayfada"
+tags: "Etiketler"
+poweredBy: "Hextra tarafından desteklenmektedir"
+readMore: "Devamını oku →"
+searchPlaceholder: "Ara..."
+
+menu:
+  blog: "Blog"
+  about: "Hakkımızda"
+  cloudflare: "Cloudflare"
+
+tableOfContents: "İçindekiler"
+close: "Kapat"
+open: "Aç" 

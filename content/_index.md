@@ -1,8 +1,6 @@
 ---
-title: "Content Placeholder"
-build:
-  render: never
-  list: never
-  publishResources: false
+title: "Welcome to deepsec"
+slug: "home"
+description: "Welcome to the deepsec blog."
+translationKey: "home"
 ---
-
